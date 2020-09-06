@@ -1,0 +1,19 @@
+/**显示查询结果背景特效**/
+.page{
+  background-color:oldlace;
+  height: 100%;
+  width:  100%;
+}
+
+/**显示查询按键特效**/
+.tap{
+  margin:60rpx;
+}
+
+/**显示查询结果字体特效**/
+.res{
+  margin:30rpx;
+  text-align: center;
+  color:blue;
+  font-weight: bolder;
+}

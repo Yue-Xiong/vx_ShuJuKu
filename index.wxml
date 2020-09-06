@@ -1,0 +1,27 @@
+<!--北门情况-->
+<view><button class="tap" bindtap="getData" type='primary'>点击查询北门情况</button></view>
+<view class="page">
+  <view class="res" wx:for="{{ne}}">
+   <view class="res">出口：{{item.exit_bei1}}<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>情况：{{item.state_bei1}}</view>     
+   <view class="res">出口：{{item.exit_bei2}}<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>情况：{{item.state_bei2}}</view>    
+   </view>
+</view>
+<view><button class='tap' bindtap='del' type='primary'>收起</button></view>
+
+<!--南门情况-->
+<view><button class="tap" bindtap="getData_2" type='primary'>点击查询南门情况</button></view>
+<view class="page">
+  <view class="res" wx:for="{{ne_2}}">
+   <view class="res">出口：{{item.exit_nan}}<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>情况：{{item.state_nan}}</view>         
+   </view>
+</view>
+<view><button class='tap' bindtap='del_2' type='primary'>收起</button></view>
+
+<!--西门情况-->
+<view><button class="tap" bindtap="getData_3" type='primary'>点击查询西门情况</button></view>
+<view class="page">
+  <view class="res" wx:for="{{ne_3}}">
+   <view class="res">出口：{{item.exit_xi}}<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>情况：{{item.state_xi}}</view>         
+   </view>
+</view>
+<view><button class='tap' bindtap='del_3' type='primary'>收起</button></view>
